@@ -19,11 +19,6 @@ return {
       black4 = "#5b6078" -- Black4
     }
  
-    -- Clock function
-    local function clock()
-      return os.date("%H:%M") -- Clock in HH:MM format
-    end
-    
     -- Define custom separators
     local separators = {
       left_round = "", -- Round separator
@@ -93,7 +88,6 @@ return {
         },
         lualine_y = {
           { "progress", separator = { left = separators.left_round, right = "" } }, -- Progress
-          { clock, separator = { left = "", right = "" } }, -- Clock with orange styling
         },
         lualine_z = { 
           { "location", separator = { left = separators.left_round, right = separators.right_square } }, -- Square on the right
